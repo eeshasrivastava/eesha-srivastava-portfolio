@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog - Personal Portfolio</title>
+    <title>My Blog | Eesha Srivastava </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -151,25 +151,155 @@
             <article class="col-12">
                 <!-- Meta Starts -->
                 <div class="meta open-sans-font">
-                    <span><i class="fa fa-user"></i> steve</span>
-                    <span class="date"><i class="fa fa-calendar"></i> 9 January 2017</span>
-                    <span><i class="fa fa-tags"></i> wordpress, business, economy, design</span>
+                    <span><i class="fa fa-user"></i> Eesha Srivastava</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 23 December 2020</span>
+                    <span><i class="fa fa-tags"></i> Kotlin</span>
                 </div>
                 <!-- Meta Ends -->
                 <!-- Article Content Starts -->
-                <h1 class="text-uppercase text-capitalize">Everything You Need to Know About Web Accessibility</h1>
-                <img src="img/blog/blog-post-1.jpg" class="img-fluid" alt="Blog image"/>
+                <h1 class="text-uppercase text-capitalize">Why should you totally switch to Kotlin ?</h1>
+                <img src="img/blog/1.jpeg" class="img-fluid" alt="Blog image"/>
                 <div class="blog-excerpt open-sans-font pb-5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>JetBrains developed IntelliJ IDEA, which is the basis for Android Studio. In 2011, the company introduced the Kotlin language, but few Android developers started using it. Though Kotlin was production ready, the language wasn’t stable. When important changes in the language happened, developers had to change their codebase.</p>
+                    <p>In 2017, Google announced that Android will support Kotlin as a first-class programming language so for this to happen, the 3.0 release of Android Studio integrated Kotlin support out of the box!
+                        Kotlin is a statically-typed, modern programming language that runs on a Java Virtual Machine (JVM) by compiling Kotlin code into Java byte-code. It’s pragmatic and concise and makes coding a satisfying and efficient experience.</p>
+                    <p>So here’s a couple of reasons why you should totally switch to Kotlin:</p>
+                    <ul>
+                        <li><b>Familiar Syntax:</b> One of the advantages of Kotlin is that we get more functionality with less lines of code. Kotlin is a concise language, with estimates of being less verbose than Java.</li>
+                        <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                            class Example {
+                                <br>
+                                val b: String = "b"     // val means ‘value cannot be changed’
+                                <br>
+                                var i: Int = 0              // var means ‘value can be changed’
+                                <br>
+                                fun message() {
+                                    <br>
+                                val str = "Hello"
+                                    <br>
+                                print("$str World")
+                                    <br>
+                                }
+                        </code>
+                        <br>
+                        <li><p><b>2. Avoid NullPointerException:</b> Facing issues with ‘null’ ? Kotlin introduces a new and secure way to deal with nulls. If the variable is nullable, the compiler will not permit you to access it without a proper check. Kotlin forces you to use a safe call operator, ?. operator.
+                        </p>
+                        <p>Question mark ‘?’ at the end of the variable is used to differentiate null variables from other normal variables in Kotlin.</p>
+
+                        <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                            val a = "Kotlin"
+                            <br>
+                            val b: String? = null
+                            <br>
+                            println(b?.length)<br>
+                            println(a?.length)
+                        </code>
+
+                        <p>This returns b.length if b is not null, and null otherwise.
+                            So with this solution at least your application will not crash implicitly via NullPointerException anymore.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>3. Type Inference:</b> Type means ‘Data Type’; Inference means ‘To automatically identify something.’ Kotlin compiler can automatically identify the data type of the variable.</p>
+                            <p>For example- if we are assigning any whole number to a variable, the compiler will identify by itself that the variable is of type Int.
+                            You can write <em>val a = 10 </em> instead of <em>val a : Int = 10</em> </p>
+                            
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>4. When expression:</b> ‘when’ expression in Kotlin is a conditional expression which returns the value. It is used in replacement of switch statements of languages such as Java, C++, C.</p>
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                fun main(args: Array<String>){
+                                    <br>
+                                    var a = 4<br>
+                                    var numberProvided = when(a) {<br>
+                                    1 -> "One"<br>
+                                    2 -> "Two"<br>
+                                    3 -> "Three"<br>
+                                    4 -> "Four"<br>
+                                    5 -> "Five"<br>
+                                    else -> "invalid number"<br>
+                                    }  println("You provide $numberProvided")<br>
+                            </code>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>5. No setters and getters:</b> In Kotlin, getters and setters are auto-generated in the code if you do not create them in your program. Getters are used for getting value of the property. Similarly, setters are used for setting value of the property.</p>
+                            <p>The following code in Kotlin-</p>
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                class Person {<br>
+                                    var name: String = "defaultvalue"<br>
+                                    get() = field                            // getter<br>
+                                    set(value) { field = value }      // setter <br>
+                                    }<br>
+
+                                    val obj = Person()<br>
+                                    obj.name = "Hello World!"    // access setter<br>
+                                    println(obj.name)                     // access getter<br>
+                            </code>
+
+                            <br>
+                            <p style="font-size: 20px; font-style: italic; ">(Output: Hello World!)</p>
+                            <p>When we are trying to access the name property of the object, we get field because of this code, <em>get() = field.</em>
+                                We can get or set the properties of an object of the class using the dot(.) notation.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <b>6. The Data Class:</b> There may arise a situation where you need to create a class solely to hold data. Data class is a simple class which is used to hold data/state and contains standard functionality. A data keyword is used to declare a class as a data class.
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                data class Student(val name: String, val age: Int)<br>
+                                fun main(args: Array<String>) {<br>
+                                val stu = Student("Mitali", 31)<br>
+                                val stu2 = Student("Ajeet", 30)<br>
+                                println("Student Name is: ${stu.name}")<br>
+                                println("Student Age is:  ${stu.age}")<br>
+                                println("Student Name is: ${stu2.name}")<br>
+                                println("Student Age is:  ${stu2.age}")<br>
+                                }
+                            </code>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>7. Extension Functions:</b> Extension functions are great as they completely remove the need for the various “Util” classes in Java. They allow us to declare functions on already existing types.</p>
+                            <p>For example, if we want to remove first and last character of the string-</p>
+
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                fun String.removeFirstLastChar(): String =  this.substring(1, this.length - 1)
+                                <br>
+                                <br>
+                                fun main(args: Array<String>) {<br>
+                                val myString= "Hello Everyone"<br>
+                                val result = myString.removeFirstLastChar()<br>
+                                println("Result is: $result")<br>
+                                }<br>
+                            </code>
+
+                            <p>When you run the program, the output will be:</p>
+                                <b>ello Everyon</b> 
+                                <p>Here, an extension function removeFirstLastChar() is added to the String class.</p>
+
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>8. String Interpolation:</b> Kotlin’s string interpolation is an amazing feature. A smarter version of Java’s String.format() is implemented in this feature.</p>
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                val x = 4<br>
+                                val y = 7<br>
+                                print("sum of $x and $y is ${x + y}")    // sum of 4 and 7 is 11<br>
+                                                               
+                            </code>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>9. Default Arguments:</b> Short and easy to use, one can provide default values to parameters in function definitions. So, this removes the need to to define several similar methods with varying arguments.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <b>10. Java Interoperability:</b> Even if you’re having your old projects written in Java, you can still continue to work using Kotlin. Kotlin is 100% interoperable with Java.
+                        </li>
+                        <br>
+                        <p style="color: #999;"><em>That’s it for today. Thanks for reading. Stay tuned for more content. Till then Happy Coding!</em>  &#128516;</p>
+                    </ul>
                 </div>
                 <!-- Article Content Ends -->
             </article>
