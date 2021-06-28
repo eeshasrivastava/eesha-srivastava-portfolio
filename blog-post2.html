@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>My Blog | Eesha Srivastava </title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Eesha Srivastava</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 11 January 2021</span>
+                    <span><i class="fa fa-tags"></i> Kotlin, Java, Android</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">KOTLIN vs JAVA — The Great War of Android App Development</h1>
+                <img src="img/blog/2.png" class="img-fluid" alt="Blog image"/>
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p>In the mobile app technologies world, Java vs Kotlin is one of the most popular search terms. If you too are looking for a comparison of Java vs Kotlin frameworks, this blog is for you!</p>
+                    <p>Kotlin is a statically typed language developed by JetBrains. Similar to Java, Kotlin has become a top choice for developing Android applications. This is evident from the fact that Android Studio comes with inbuilt support for Kotlin like it has for Java.</p>
+                    <p>So, the question is whether one should switch to Kotlin from Java or not? Well, it depends on preferences. However, before making the switch it’s important to understand the distinction between the two programming languages:</p>
+                    <ul>
+                        <li><b>Code Conciseness</b> Kotlin is massively known for being concise, one of the important factors that give this powerful language an edge over Java. It reduces the boilerplate code up to a great extent which mitigates the risk of getting more errors as the lesser the boilerplate code, the more readable the code is.
+                            Taking an example of the syntax for a data class written in Java and Kotlin to get a clear comparison:</li>
+                            <p>[Java Syntax]</p>
+                        <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                            class Example {
+                                public class ChapterTeamFragModel  {
+                                    private String ChapterName; <br>
+                                    private String ChapterFullForm; <br>
+                                    private  int ChapPhoto; <br>
+                                 public ChapterTeamFragModel(){ <br>
+                                 } <br>
+                                 public ChapterTeamFragModel(String chapname, String chapterfullform, int chapterphoto){ <br>
+                                    ChapterName=chapname; <br>
+                                    ChapterFullForm=chapterfullform; <br>
+                                    ChapPhoto=chapterphoto; <br>
+                                 } <br>
+                                 public int getChapPhoto() { <br>
+                                    return ChapPhoto; <br>
+                                 } <br>
+                                 public String getChapterName() { <br>
+                                    return ChapterName; <br>
+                                 } <br>
+                                 public void setChapterFullForm(String chapterFullForm) { <br>
+                                    ChapterFullForm = chapterFullForm; <br>
+                                 } <br>
+                                 public String getChapterFullForm() { <br>
+                                    return ChapterFullForm; <br>
+                                 } <br>
+                                 public void setChapterName(String chapterName) { <br>
+                                    ChapterName = chapterName; <br>
+                                 } <br>
+                                 public void setChapPhoto(int chapPhoto) { <br>
+                                    ChapPhoto = chapPhoto;} <br>
+                                 } <br>
+                        </code>
+                        
+                        <br>
+                        <p>[Kotlin Syntax]</p>
+                        <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                            data class ChapterTeamFragModel(val ChapterName :String , val ChapterFullform :String , val ChapPhoto :Int)</code>
+                            <br>
+                            <p>Other than this, the use of Delegates, KotlinLib, and One-line functions, no use of “findViewbyids”, a shorter code for “setOnClickListener” are some more examples that help in the reduction of the boilerplate code, making Kotlin a powerful language.</p>
+                            <br>
+                        <li><p><b>Null Safety</b> One of the most infuriating issues concerning Java for developers is the NullPointerExceptions. Unlike Java, all types are non-nullable in Kotlin by default. If developers try to assign or return null in the Kotlin code, it’ll fail at compile time. However, there’s a way around it. In order to assign a null value to a variable in Kotlin, it is required to explicitly mark that variable as nullable.
+
+                        </p>
+                        <br>
+
+                        <p>This is done by adding a question mark after the type, for example:</p>
+
+                        <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                            val number: Int? = null
+                        </code>
+
+                        <p>Thus, there are no NullPointerExceptions in Kotlin.</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Smart Casts</b> Before an object can be cast in Java, it is mandatory to check the type. Unlike Java, Kotlin comes with the smart cast feature, which automatically handles such redundant casts. You don’t need to cast inside a statement provided it is already checked with the ‘is operator’ in Kotlin.</p>
+                           
+                            
+                        </li>
+                        <br>
+                        <li>
+                            <p><b> Interoperability</b> It is the core purpose of Kotlin. From the beginning, the intention of the project was to use existing knowledge and experience so that all libraries are available to Kotlin programmers. Developers can simply write modules in Kotlin that work perfectly within the existing Java code. By issuing the Byte code, a Kotlin compiler allows the two languages to work in unison in the same project.</p>
+                            
+                        </li>
+                        <br>
+                        <li>
+                            <p><b> Ternary Operator</b> Unlike Kotlin, Java has a ternary operator. The Java ternary operator simply works like a basic if statement. It consists of a condition that evaluates to true or false.
+                                Moreover, the Java ternary operator has two values. Only one of them is returned depending on whether the condition is true or false.</p>
+                            <p>The syntax for the Java ternary operator is:</p>
+                            <code style="color: rgb(39, 29, 15); border: 1px solid #999; display: block; padding: 20px; background-color: rgb(218, 207, 207);">
+                                (condition) ? (value1) : (value 2)
+                            </code>
+
+                            <br>
+                           
+                          
+                        </li>
+                        <br>
+                        <li>
+                            <b>Extension Functions</b> Kotlin allows developers to extend a class with new functionality via extension functions. These functions, although available in other programming languages like C#, aren’t available in Java.
+                            
+                        </li>
+                        <br>
+                        <li>
+                            <p><b>Raw types</b> Before generics, raw types were used quite frequently. Raw types allow backward compatibility, but raw types can generate a CastClassException and the error will occur during execution and not at the compilation stage. Kotlin does not allow unformatted types and, as a result, produced a more secure code for the type.</p>
+                           
+                           
+
+                        </li>
+                        <br>
+                    </ul>
+                    <p><b>Is this the end of Java?</b> </p>
+                    <br>
+                    <p>Although Kotlin is tremendously proving itself to have an edge over Java as far as its advantages are concerned, when it comes to choosing between the two languages, there is still a sense of ambivalence among the developers. Some prefer to stick to Java because of their experience and comfort while a lot of people are gravitating towards exploring a powerful alternative to ease out their work keeping in mind the perks offered by Kotlin.</p>
+                    <p>In a personal opinion, Java is surviving for a very long time. And the main argument might be the fact that <em>Kotlin is designed to address Java’s issues.</em></p>
+                        <p>I would say that Java is still a widely used and preferred language among a whole lot of developers and is here to persist in the industry for a longer time span due to its humongous amount of resources and documentation available for reference.</p>
+                        <p>But as Google said, Kotlin is the future of Android mobile applications. It is a reliable, flexible, and secure language for both startups and enterprises. Not only it reduces errors but also crashes at run-time making debugging reliable.
+                            Furthermore, being budget-friendly and enhanced efficiency, it’s best for the companies to hire android app developers having hands-on expertise with Kotlin.</p>
+                            
+                    <p style="color: #999;"><em>That’s it for today. Thanks for reading. Stay tuned for more content. Till then Happy Coding!</em>  &#128516;</p>
+                   
+                   
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+
+
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
