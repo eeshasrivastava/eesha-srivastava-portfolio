@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>My Blog | Eesha Srivastava </title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog-post">
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+
+       <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="portfolio.html">
+                <h2>Portfolio</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-envelope-open"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-comments"></i>
+            <a href="blog.html">
+                <h2>Blog</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>my <span>blog</span></h1>
+    <span class="title-bg">posts</span>
+</section>
+<!-- Page Title Ends -->
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <!-- Article Starts -->
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                    <span><i class="fa fa-user"></i> Eesha Srivastava</span>
+                    <span class="date"><i class="fa fa-calendar"></i>11 July 2021</span>
+                    <span><i class="fa fa-tags"></i>Snapchat</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">How my Snapchat Lenses got trending in 7 days?</h1>
+                
+                <div class="blog-excerpt open-sans-font pb-5">
+                    <p>Hola folks!
+                        In this blog, I will be talking about my recent experience, when I started to explore the Snapchat Lenses section. In fact, on 11th July, I got my Lenses trending on Snapchat with 10K+ views (it became 11K now 😁).</p>
+                        <img src="img/blog/6666.png" class="img-fluid" alt="Blog image"/>
+                        <p>Snapchat Inc. mainly aims to contribute by empowering people to express themselves, live in the moment, learn about the world and have fun. And with that, the great and the most fascinating thing about Snapchat is its filers/lenses collection.
+                            
+                            <b>Lens Studio</b> is a real-time tool by Snapchat for creating Lenses. It allows you to create both Face Lenses (front camera) and World Lenses (rear camera). </p>
+                            
+                        <p>So, basically Glow Up Girl is the name of my Snapchat Filter, even you can try it by searching or I will be providing the details below.
+                            </p>
+                            <img src="img/blog/666.png" class="img-fluid" alt="Blog image"/>
+                    <p>As you can see here, I published it on 4th July, with not so much prior experience of Lens Studio. If you are familiar with the softwares like Maya, Cinema4D, Blender, 3ds Max, then trust me, this will be a piece of cake for you.</p>
+                        
+                        <p>All the creators, from 3D professionals to Photoshop hobbyists, can create their own customized Lens through this. Even it offers a number of Templates to get your hands on it from the start.
+                        </p>
+                        <p>I didn't choose any template at first, I just wanted to explore the tools of this software so I clicked on the “Open a New Project” button.</p>
+                        <img src="img/blog/66666.png" class="img-fluid" alt="Blog image"/>
+                        <p>This will be the workspace where you will be navigated after opening the new project. If you are here for the first time, a short tutorial of making a Birthday Countdown Lense will be provided to you as well for getting familiar with the platform. Now I will explain to you about the Lenses section in accordance with the different domains.</p>
+                        <p>Several kinds of Lenses can be made with different features in it. Some are for Face Effects, VFX Editors, Material Editors (how shaders work), others use Machine Learning (SnapML) or maybe some are modifications of the templates available. The past part of this is Scripting API (Lens Studio’s JavaScript API). Lens Studio itself provides a scripting engine for creating rich interactive experiences. With the help of scripts, your Lenses can respond to touch input, play animation and audio, modify objects.</p>
+                        <p>Even if you are a Photoshop hobbyist and not having much coding experience, you can use the Helper Scripts, which can help you add interactivity without you having to write code.</p>
+                        <p>Practically speaking, you might already be using machine learning in Lens Studio without realizing it if you’ve been using segmentation and other features! In addition to the built-in ML models which come with Lens Studio, Lens Studio 3.0 introduced SnapML. SnapML allows you to add your own ML models to your Lenses, which means that you can extend the capabilities of Lens Studio to do more than what it comes with! You can import models created using many different frameworks like PyTorch, TensorFlow, and frameworks compatible with ONNX.</p>
+                        <p>This was my first ever Snapchat Lenses experience and hence, I went with Face Effects. The effects range from face modifications which require no assets, to attachments requiring simple 2D textures, to more complex effects with 3D animated assets. These effects can be used on their own or together, and can be applied to one or more faces. The Face Retouch effect offers a number of features for retouching the user’s face including Soft Skin, Teeth Whitening, Eye Sharpening and Eye Whitening.</p>
+                        <p>After creating the Lenses, there comes the testing part. So, when you build a Lens using Lens Studio, it is a feature that users will be able to unlock them in both Snapchat and Snapchat Camera by Snap Code. And this allows creators to actually see how is the Lenses working. Even Snap Camera lets you apply Lenses to your face while using your computer’s webcam.</p>
+                        <p>Now, it is the time for submission. There will be some submission guidelines, you will be asked to provide a short video of the lenses as well as the picture which will be displayed in Public.</p>
+                        <p>After completing these steps, Hurraayy!! Your first Lenses have become public. 😀</p>
+                        <img src="img/blog/babygif.gif" class="img-fluid" alt="Blog image"/>
+                        <p>Wait few days for the insights then, if your Lenses will become popular you will be getting insights in 3–4 days or else it will take time. I published two Lenses at the very start, one was purely for trying out something new, which got around 800 views till date and the second one has become popular now!</p>
+                        <p>If you will also start to create Snapchat Lenses or Instagram Filters, do let me know. Feel free to connect with me.</p>
+                            
+                     <p style="color: #999;"><em>Till then Happy Coding!</em>  &#128516;</p>
+                   
+                   
+                </div>
+                <!-- Article Content Ends -->
+            </article>
+            <!-- Article Ends -->
+
+
+        </div>
+    </div>
+</section>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
